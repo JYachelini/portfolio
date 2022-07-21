@@ -1,0 +1,144 @@
+main {
+	margin: 75px;
+	margin-top: 0;
+	padding-top: 75px;
+	z-index: 2;
+	position: relative;
+	section {
+		min-height: 100vh;
+		margin-top: 5em;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		@media only screen and(min-width:$breakpoint-lg) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.section_me {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		height: 100vh;
+	}
+	.section_me--presentation,
+	.section_me--aboutMe {
+		width: 100%;
+		@media only screen and (min-width: $breakpoint-lg) {
+			width: 50%;
+		}
+		h1 {
+			font-size: 2.5rem;
+			font-weight: 400;
+		}
+	}
+	.section_me--presentation {
+		text-align: right;
+		margin-top: 5em;
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	.section_me--aboutMe {
+		text-align: left;
+		margin-top: 10em;
+		@media only screen and (min-width: $breakpoint-lg) {
+			text-align: right;
+		}
+	}
+	// .section_me--CV{
+	//   color: var(--);
+	// }
+	.section_skills {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@media only screen and (min-width: $breakpoint-lg) {
+			flex-direction: row;
+		}
+		h1 {
+			font-size: 4rem;
+			font-weight: 600;
+		}
+		.section_skills--left,
+		.section_skills--right {
+			width: 100%;
+			text-align: left;
+			@media only screen and (min-width: $breakpoint-lg) {
+				width: 50%;
+				padding: 3em;
+			}
+		}
+		.section_skills--left {
+			.section_skills--right-skill {
+				h2 {
+					font-size: 2rem;
+				}
+				div {
+					img {
+						width: 12%;
+					}
+				}
+			}
+			h1 {
+				max-width: 400px;
+			}
+			#soft {
+				div {
+					width: 15%;
+					display: flex;
+					flex-direction: column;
+					img {
+						width: 100%;
+					}
+					p{
+						text-align: center;
+					}
+				}
+			}
+		}
+		.section_skills--right {
+			.section_skills--right_certifications {
+				margin-top: 5em;
+				display: flex;
+				gap: 15px;
+				.certification-wrap {
+					border: 1px solid var(--color-lines);
+					background-color: rgba(38, 37, 35, 0.4);
+					padding: 1em;
+					width: 45%;
+					display: flex;
+					flex-direction: column;
+					gap: 5px;
+					p,
+					h4,
+					a {
+						color: var(--color-gray);
+					}
+					p,
+					a {
+						font-size: 0.7rem;
+					}
+				}
+			}
+		}
+	}
+
+	.section_projects {
+		h1 {
+			text-align: center;
+		}
+		div {
+			article {
+				justify-content: space-between;
+				a {
+					p {
+						color: var(--color-gray);
+					}
+					img {
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}
