@@ -8,7 +8,7 @@ import BgCircles from './components/BgCircles'
 import React from 'react'
 import useIntersection from './Functions/useIntersection'
 
-console.log('v: 0.1.0')
+console.log('v: 0.1.1')
 console.log('Thanks you for watch my portfolio 🥳')
 
 function App() {
