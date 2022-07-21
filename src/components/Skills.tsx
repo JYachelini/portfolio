@@ -22,21 +22,13 @@ import responsability from '../assets/responsability.png'
 import teamwork from '../assets/teamwork.png'
 import possitive from '../assets/possitive.png'
 
-function Skills() {
+const Skills = React.forwardRef((props, ref: any) => {
 	return (
-		<section
-			id='Skills'
-			className='section_skills'
-		>
+		<section id='Skills' className='section_skills'>
 			<div className='section_skills--left flex flex-col justify-around'>
-				<div>
-					<h2 className='text-3xl'>
-						Soft skills
-					</h2>
-					<div
-						id='soft'
-						className='flex flex-wrap gap-7 p-4 pl-0'
-					>
+				<div ref={ref}>
+					<h2 className='text-3xl'>Soft skills</h2>
+					<div id='soft' className='flex flex-wrap gap-7 p-4 pl-0'>
 						<div>
 							<img src={communication} alt='' />
 							<p>Communication</p>
@@ -69,33 +61,29 @@ function Skills() {
 				</div>
 				<div>
 					<div className='section_skills--right-skill'>
-							<h2>Tecnhologies</h2>
-							<div className='flex  max-w-full flex-wrap gap-4 p-4 pl-0'>
-								<img src={html} alt='' />
-								<img src={css} alt='' />
-								<img src={scss} alt='' />
-								<img src={tailwind} alt='' />
-								<img src={react} alt='' />
-								<img src={vite} alt='' />
-								<img src={js} alt='' />
-								<img src={ts} alt='' />
-								<img src={nodejs} alt='' />
-								<img src={mongodb} alt='' />
-								<img src={terminal} alt='' />
-								<img src={linux} alt='' />
-								<img src={npm} alt='' />
-								<img src={git} alt='' />
+						<h2>Tecnhologies</h2>
+						<div className='flex  max-w-full flex-wrap gap-4 p-4 pl-0'>
+							<img src={html} alt='' />
+							<img src={css} alt='' />
+							<img src={scss} alt='' />
+							<img src={tailwind} alt='' />
+							<img src={react} alt='' />
+							<img src={vite} alt='' />
+							<img src={js} alt='' />
+							<img src={ts} alt='' />
+							<img src={nodejs} alt='' />
+							<img src={mongodb} alt='' />
+							<img src={terminal} alt='' />
+							<img src={linux} alt='' />
+							<img src={npm} alt='' />
+							<img src={git} alt='' />
 						</div>
 					</div>
 				</div>
 			</div>
 			<div className='section_skills--right'>
 				<div className='section_skills--right_certifications flex-wrap'>
-					<a
-						href=''
-						className='certification-wrap'
-						target='_blank'
-					>
+					<a href='' className='certification-wrap' target='_blank'>
 						<h3>BackEnd Developer</h3>
 						<h4>Coderhouse</h4>
 						<p>2022</p>
@@ -135,6 +123,6 @@ function Skills() {
 			</div>
 		</section>
 	)
-}
+})
 
 export default Skills

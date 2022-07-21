@@ -6,35 +6,35 @@ import LinkedInLogo from '../assets/Linkedin.svg'
 import MeLogo from '../assets/Me.svg'
 import ProjectsLogo from '../assets/Projects.svg'
 import SkillsLogo from '../assets/Skills.svg'
+import { Link } from 'react-scroll'
 
-function LeftSidebar() {
-	const logoMe = document.querySelector('.left_sidebar--menu_me')
-	const logoSkills = document.querySelector('.left_sidebar--menu_skills')
-	const logoProjects = document.querySelector('.left_sidebar--menu_works')
-
-
+function LeftSidebar(props:any) {
 	return (
 		<aside className='left_sidebar'>
 			<div className='left_sidebar--logoJY'>
 				<img src={JYLogo} alt='Logo Julían Yachelini' />
 			</div>
 			<div className='left_sidebar--menu'>
-				<span
-					className='left_sidebar--menu_me logos-menu blurOff'
-				>
-					<img src={MeLogo} alt='' />
+				<span className={`left_sidebar--menu_me logos-menu ${props.inViewportMe ? 'blurOff':''}`}>
+					<Link to='Me' smooth={true} duration={500}>
+						<img src={MeLogo} alt='' />
+					</Link>
 					<div>
 						<p>About</p>
 					</div>
 				</span>
-				<span className='left_sidebar--menu_skills logos-menu'>
-					<img src={SkillsLogo} alt='' />
+				<span className={`left_sidebar--menu_skills logos-menu ${props.inViewportSkills ? 'blurOff':''}`}>
+					<Link to='Skills' smooth={true} duration={500}>
+						<img src={SkillsLogo} alt='' />
+					</Link>
 					<div>
 						<p>Skills</p>
 					</div>
 				</span>
-				<span className='left_sidebar--menu_works logos-menu'>
-					<img src={ProjectsLogo} alt='' />
+				<span className={`left_sidebar--menu_works logos-menu ${props.inViewportProjects ? 'blurOff':''}`}>
+					<Link to='Projects' smooth={true} duration={500}>
+						<img src={ProjectsLogo} alt='' />
+					</Link>
 					<div>
 						<p>Projects</p>
 					</div>
