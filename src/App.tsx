@@ -8,6 +8,9 @@ import BgCircles from './components/BgCircles'
 import React from 'react'
 import useIntersection from './Functions/useIntersection'
 
+console.log('v: 0.1.0')
+console.log('Thanks you for watch my portfolio 🥳')
+
 function App() {
 	const refMe = React.createRef()
 	const refSkills = React.createRef()
