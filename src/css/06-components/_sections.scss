@@ -9,6 +9,11 @@ main {
 		margin-top: 5em;
 		margin-left: 1.5em;
 		margin-right: 1.5em;
+		padding: 0;
+		@media only screen and(min-width:$breakpoint-sm){
+			padding: 3rem;
+
+		}
 		@media only screen and(min-width:$breakpoint-lg) {
 			margin-left: 0;
 			margin-right: 0;
@@ -18,16 +23,18 @@ main {
 		display: flex;
 		flex-direction: column;
 		align-items: end;
-		height: 100vh;
 	}
 	.section_me--presentation,
 	.section_me--aboutMe {
 		width: 100%;
-		@media only screen and (min-width: $breakpoint-lg) {
-			width: 50%;
+		@media only screen and (min-width: $breakpoint-4xl) {
+			width: 40%;
 		}
 		h1 {
-			font-size: 2.5rem;
+			@media only screen and (min-width:$breakpoint-sm){
+				font-size: 2.5rem;
+			}
+			font-size: 1.7rem;
 			font-weight: 400;
 		}
 	}
@@ -35,7 +42,10 @@ main {
 		text-align: right;
 		margin-top: 5em;
 		h3 {
-			font-size: 1.5rem;
+			@media only screen and (min-width:$breakpoint-sm){
+				font-size: 1.5rem;
+			}
+			font-size: 1rem;
 		}
 	}
 	.section_me--aboutMe {
@@ -52,7 +62,7 @@ main {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		@media only screen and (min-width: $breakpoint-lg) {
+		@media only screen and (min-width: $breakpoint-4xl) {
 			flex-direction: row;
 		}
 		h1 {
@@ -63,9 +73,8 @@ main {
 		.section_skills--right {
 			width: 100%;
 			text-align: left;
-			@media only screen and (min-width: $breakpoint-lg) {
+			@media only screen and (min-width: $breakpoint-4xl) {
 				width: 50%;
-				padding: 3em;
 			}
 		}
 		.section_skills--left {
@@ -75,7 +84,7 @@ main {
 				}
 				div {
 					img {
-						width: 12%;
+						width: 6rem;
 					}
 				}
 			}
@@ -83,17 +92,20 @@ main {
 				max-width: 400px;
 			}
 			#soft {
-				div {
-					width: 15%;
 					display: flex;
-					flex-direction: column;
-					img {
-						width: 100%;
+					flex-wrap: wrap;
+					gap: 1rem 4rem;
+					padding: 0.2rem;
+					div {
+						gap: 0.1rem;
+						width: 8rem;
+						display: flex;
+						flex-direction: column;
+						p {
+							text-align: center;
+							font-size: 1em;
+						}
 					}
-					p{
-						text-align: center;
-					}
-				}
 			}
 		}
 		.section_skills--right {
@@ -105,7 +117,6 @@ main {
 					border: 1px solid var(--color-lines);
 					background-color: rgba(38, 37, 35, 0.4);
 					padding: 1em;
-					width: 45%;
 					display: flex;
 					flex-direction: column;
 					gap: 5px;
@@ -124,9 +135,6 @@ main {
 	}
 
 	.section_projects {
-		h1 {
-			text-align: center;
-		}
 		div {
 			article {
 				justify-content: space-between;
@@ -135,7 +143,7 @@ main {
 						color: var(--color-gray);
 					}
 					img {
-						width: 90%;
+						width: 34rem;
 					}
 				}
 			}

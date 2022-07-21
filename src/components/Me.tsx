@@ -13,25 +13,24 @@ const Me = React.forwardRef((props, ref: any) => {
 				</h3>
 				<h6>Typescript lover.</h6>
 			</div>
-			<div className='flex flex-col justify-between section_me--aboutMe'>
+			<div className='flex flex-col justify-between section_me--aboutMe gap-4'>
 				<h1>About me.</h1>
 				<p>I'm a Backend Developer, created in Argentina.</p>
 				<p>
-					I did one year of degree in Systems Analyst where I learned C and liked it. In
+					I did one year of degree in Systems Analyst where I learned C. In
 					the second year I realised that what I really liked was programming and I went
-					into Web Development, where I learned Frontend and now I'm about to finish a
-					Backend course which I liked much more than Frontend.
+					into Web Development, where I learned Front and Back.
 				</p>
 				<p>I am currently actively looking for a backend Development opportunity</p>
 				<p>
 					I like <strong>cats</strong>.
 				</p>
 				<a
-					className='ml-auto'
+					className='xl:ml-auto'
 					href='./pdf/CV_JulianYachelini.pdf'
 					download='CVJuliánYachelini'
 				>
-					<strong className='text-3xl'>Download CV</strong>
+					<strong className='text-4xl'>Download CV</strong>
 				</a>
 			</div>
 		</section>

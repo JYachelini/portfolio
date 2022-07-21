@@ -25,10 +25,10 @@ import possitive from '../assets/possitive.png'
 const Skills = React.forwardRef((props, ref: any) => {
 	return (
 		<section id='Skills' className='section_skills'>
-			<div className='section_skills--left flex flex-col justify-around'>
+			<div className='section_skills--left flex flex-col justify-between'>
 				<div ref={ref}>
 					<h2 className='text-3xl'>Soft skills</h2>
-					<div id='soft' className='flex flex-wrap gap-7 p-4 pl-0'>
+					<div id='soft'>
 						<div>
 							<img src={communication} alt='' />
 							<p>Communication</p>
@@ -59,31 +59,29 @@ const Skills = React.forwardRef((props, ref: any) => {
 						</div>
 					</div>
 				</div>
-				<div>
-					<div className='section_skills--right-skill'>
-						<h2>Tecnhologies</h2>
-						<div className='flex  max-w-full flex-wrap gap-4 p-4 pl-0'>
-							<img src={html} alt='' />
-							<img src={css} alt='' />
-							<img src={scss} alt='' />
-							<img src={tailwind} alt='' />
-							<img src={react} alt='' />
-							<img src={vite} alt='' />
-							<img src={js} alt='' />
-							<img src={ts} alt='' />
-							<img src={nodejs} alt='' />
-							<img src={mongodb} alt='' />
-							<img src={terminal} alt='' />
-							<img src={linux} alt='' />
-							<img src={npm} alt='' />
-							<img src={git} alt='' />
-						</div>
+				<div className='section_skills--right-skill'>
+					<h2>Tecnhologies</h2>
+					<div className='flex  max-w-full flex-wrap sm:gap-4 sm:p-4 pl-0'>
+						<img src={html} alt='' />
+						<img src={css} alt='' />
+						<img src={scss} alt='' />
+						<img src={tailwind} alt='' />
+						<img src={react} alt='' />
+						<img src={vite} alt='' />
+						<img src={js} alt='' />
+						<img src={ts} alt='' />
+						<img src={nodejs} alt='' />
+						<img src={mongodb} alt='' />
+						<img src={terminal} alt='' />
+						<img src={linux} alt='' />
+						<img src={npm} alt='' />
+						<img src={git} alt='' />
 					</div>
 				</div>
 			</div>
 			<div className='section_skills--right'>
-				<div className='section_skills--right_certifications flex-wrap'>
-					<a href='' className='certification-wrap' target='_blank'>
+				<div className='section_skills--right_certifications flex-wrap flex-col md:flex-row'>
+					<a href='' className='certification-wrap  w-auto md:w-[45%]' target='_blank'>
 						<h3>BackEnd Developer</h3>
 						<h4>Coderhouse</h4>
 						<p>2022</p>
@@ -91,7 +89,7 @@ const Skills = React.forwardRef((props, ref: any) => {
 					</a>
 					<a
 						href='https://us.coderhouse.com/certificados/61affac7e6561800282a5b3a'
-						className='certification-wrap'
+						className='certification-wrap  w-auto md:w-[45%]'
 						target='_blank'
 					>
 						<h3>FrontEnd React</h3>
@@ -101,7 +99,7 @@ const Skills = React.forwardRef((props, ref: any) => {
 					</a>
 					<a
 						href='https://us.coderhouse.com/certificados/61609dc933d8ab0055dac7df'
-						className='certification-wrap'
+						className='certification-wrap  w-auto md:w-[45%]'
 						target='_blank'
 					>
 						<h3>Javascript</h3>
@@ -111,7 +109,7 @@ const Skills = React.forwardRef((props, ref: any) => {
 					</a>
 					<a
 						href='https://us.coderhouse.com/certificados/61215a6b9fae6803410babf1'
-						className='certification-wrap'
+						className='certification-wrap  w-auto md:w-[45%]'
 						target='_blank'
 					>
 						<h3>Web Development (HTML/CSS)</h3>
