@@ -1,6 +1,5 @@
 main {
-	margin: 75px;
-	margin-top: 0;
+	margin: 0 75px;
 	padding-top: 75px;
 	z-index: 2;
 	position: relative;
@@ -122,11 +121,11 @@ main {
 					gap: 5px;
 					p,
 					h4,
-					a {
+					a, div a {
 						color: var(--color-gray);
 					}
 					p,
-					a {
+					a, div a {
 						font-size: 0.7rem;
 					}
 				}
