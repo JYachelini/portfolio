@@ -15,13 +15,13 @@ const Me = React.forwardRef((props, ref: any) => {
 			</div>
 			<div className='flex flex-col justify-between section_me--aboutMe gap-4'>
 				<h1>About me.</h1>
-				<p>I'm a Backend Developer, created in Argentina.</p>
+				<p>I'm a Backend Developer, from Argentina.</p>
 				<p>
 					I did one year of degree in Systems Analyst where I learned C. In
 					the second year I realised that what I really liked was programming and I went
-					into Web Development, where I learned Front and Back.
+					into Web Development, where I learned Front-end and Back-end.
 				</p>
-				<p>I am currently actively looking for a backend Development opportunity</p>
+				<p>I am currently actively looking for a back-end developer job opportunity</p>
 				<p>
 					I like <strong>cats</strong>.
 				</p>
@@ -30,7 +30,7 @@ const Me = React.forwardRef((props, ref: any) => {
 					href='./pdf/CV_JulianYachelini.pdf'
 					download='CVJuliánYachelini'
 				>
-					<strong className='text-4xl'>Download CV</strong>
+					<strong className='text-4xl'>Download Resume</strong>
 				</a>
 			</div>
 		</section>

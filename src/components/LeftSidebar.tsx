@@ -58,7 +58,7 @@ function LeftSidebar(props:any) {
 				>
 					<img src={LinkedInLogo} alt='' />
 					<div>
-						<p>LindekIn</p>
+						<p>LinkedIn</p>
 					</div>
 				</a>
 				<a

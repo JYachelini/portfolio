@@ -60,7 +60,7 @@ const Skills = React.forwardRef((props, ref: any) => {
 					</div>
 				</div>
 				<div className='section_skills--right-skill'>
-					<h2>Tecnhologies</h2>
+					<h2>Technologies</h2>
 					<div className='flex  max-w-full flex-wrap sm:gap-4 sm:p-4 pl-0'>
 						<img src={html} alt='' />
 						<img src={css} alt='' />
