@@ -75,7 +75,7 @@ const Skills = React.forwardRef((props, ref: any) => {
 						className='certification-wrap  w-auto md:w-[45%]'
 						target='_blank'
 					>
-						<h3>web Development (html/css)</h3>
+						<h3>web development (html/css)</h3>
 						<h4>coderhouse</h4>
 						<p>2021</p>
 						<p>click me to view certificate</p>

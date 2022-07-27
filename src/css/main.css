@@ -295,7 +295,7 @@ main .section_me--aboutMe {
 @media only screen and (min-width: 1536px) {
   main .section_me--presentation,
 main .section_me--aboutMe {
-    width: 40%;
+    width: 50%;
   }
 }
 main .section_me--presentation h1,
