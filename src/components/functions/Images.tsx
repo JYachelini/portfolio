@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImagesInterface } from '../Interfaces/Images'
+import { ImagesInterface } from '../../Interfaces/Images'
 
 function Images({ src, description }:ImagesInterface, key:number) {
 	return (
