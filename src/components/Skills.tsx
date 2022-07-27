@@ -1,27 +1,30 @@
 import React, { useState } from 'react'
-import skills from './images.json'
 import Images from './functions/Images'
 
 import { ImagesInterface } from '../Interfaces/Images'
 
+import { importTechnologies, importSoftSkills } from './ImportImages'
+
 const Skills = React.forwardRef((props, ref: any) => {
-	const [softSkills, setSoftSkills] = useState<ImagesInterface[]>(skills.soft)
-	const [technologies, setTechnologies] = useState<ImagesInterface[]>(skills.technologies)
+	const [technologies, setTechnologies] = useState(importTechnologies)
+	const [softSkills, setSoftSkills] = useState(importSoftSkills)
 	return (
 		<section id='Skills' className='section_skills'>
 			<div className='section_skills--left flex flex-col justify-between'>
 				<div ref={ref}>
 					<h2 className='text-3xl'>soft skills</h2>
 					<div id='soft'>
-						{softSkills.map((image: ImagesInterface, index:number) => {
-							return <Images key={index} src={image.src} description={image.description} />
+						{softSkills.map((image: ImagesInterface, index: number) => {
+							return (
+								<Images key={index} src={image.src} description={image.description} />
+							)
 						})}
 					</div>
 				</div>
 				<div className='section_skills--right-skill'>
 					<h2>technologies</h2>
 					<div className='flex  max-w-full flex-wrap sm:gap-4 sm:p-4 pl-0'>
-						{technologies.map((image: ImagesInterface, index:number) => {
+						{technologies.map((image: ImagesInterface, index: number) => {
 							return <Images key={index} src={image.src} description={image.description} />
 						})}
 					</div>
