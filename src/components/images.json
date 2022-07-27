@@ -1,0 +1,86 @@
+{
+	"soft": [
+		{
+			"src": "./src/assets/soft/motivation.png",
+			"description": "motivation"
+		},
+		{
+			"src": "./src/assets/soft/communication.png",
+			"description": "communication"
+		},
+		{
+			"src": "./src/assets/soft/positive.png",
+			"description": "positive"
+		},
+		{
+			"src": "./src/assets/soft/problemsolving.png",
+			"description": "problemsolving"
+		},
+		{
+			"src": "./src/assets/soft/responsability.png",
+			"description": "responsability"
+		},
+		{
+			"src": "./src/assets/soft/teamwork.png",
+			"description": "teamwork"
+		}
+	],
+	"technologies": [
+		{
+			"src": "./src/assets/technologies/html5.svg",
+			"description": "html"
+		},
+		{
+			"src": "./src/assets/technologies/css3.svg",
+			"description": "css"
+		},
+		{
+			"src": "./src/assets/technologies/scss.svg",
+			"description": "scss"
+		},
+		{
+			"src": "./src/assets/technologies/tailwind.svg",
+			"description": "tailwind"
+		},
+		{
+			"src": "./src/assets/technologies/js.svg",
+			"description": "javascript"
+		},
+		{
+			"src": "./src/assets/technologies/react.svg",
+			"description": "react"
+		},
+		{
+			"src": "./src/assets/technologies/typescript.svg",
+			"description": "typescript"
+		},
+		{
+			"src": "./src/assets/technologies/vitejs.svg",
+			"description": "vite"
+		},
+		{
+			"src": "./src/assets/technologies/nodejs.svg",
+			"description": "nodejs"
+		},
+		{
+			"src": "./src/assets/technologies/mongodb.svg",
+			"description": "mongodb"
+		},
+		{
+			"src": "./src/assets/technologies/terminal.svg",
+			"description": "terminal"
+		},
+		{
+			"src": "./src/assets/technologies/linux.svg",
+			"description": "linux"
+		},
+		{
+			"src": "./src/assets/technologies/npm.svg",
+			"description": "npm"
+		},
+		{
+			"src": "./src/assets/technologies/git.svg",
+			"description": "git"
+		}
+	]
+}

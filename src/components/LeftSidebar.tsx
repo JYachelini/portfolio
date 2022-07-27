@@ -20,7 +20,7 @@ function LeftSidebar(props: any) {
 						<img src={MeLogo} alt='' />
 					</Link>
 					<div>
-						<p>About</p>
+						<p>about</p>
 					</div>
 				</span>
 				<span className={`left_sidebar--menu_skills logos-menu ${props.inViewportSkills ? 'blurOff' : ''}`}>
@@ -28,7 +28,7 @@ function LeftSidebar(props: any) {
 						<img src={SkillsLogo} alt='' />
 					</Link>
 					<div>
-						<p>Skills</p>
+						<p>skills</p>
 					</div>
 				</span>
 				<span className={`left_sidebar--menu_works logos-menu ${props.inViewportProjects ? 'blurOff' : ''}`}>
@@ -36,7 +36,7 @@ function LeftSidebar(props: any) {
 						<img src={ProjectsLogo} alt='' />
 					</Link>
 					<div>
-						<p>Projects</p>
+						<p>projects</p>
 					</div>
 				</span>
 			</div>
@@ -44,19 +44,19 @@ function LeftSidebar(props: any) {
 				<a target='_blank' href='https://github.com/JYachelini/' className='left_sidebar--socialIcons_Github'>
 					<img src={GithubLogo} alt='' />
 					<div>
-						<p>Github</p>
+						<p>github</p>
 					</div>
 				</a>
 				<a target='_blank' href='https://www.linkedin.com/in/jyachelini/' className='left_sidebar--socialIcons_Linkedin'>
 					<img src={LinkedInLogo} alt='' />
 					<div>
-						<p>LinkedIn</p>
+						<p>linkedIn</p>
 					</div>
 				</a>
 				<a target='_blank' href='https://www.instagram.com/yache._/' className='left_sidebar--socialIcons_Instagram'>
 					<img src={InstagramLogo} alt='' />
 					<div>
-						<p>Instagram</p>
+						<p>instagram</p>
 					</div>
 				</a>
 			</div>

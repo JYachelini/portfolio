@@ -1,0 +1,1 @@
+- agregar popup para usuarios con firefox sobre el glass effect
