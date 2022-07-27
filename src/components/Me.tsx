@@ -1,4 +1,5 @@
 import React from 'react'
+import pdf from '../assets/CV_JulianYachelini_EN.pdf'
 
 const Me = React.forwardRef((props, ref: any) => {
 	return (
@@ -27,7 +28,7 @@ const Me = React.forwardRef((props, ref: any) => {
 				</p>
 				<a
 					className='xl:ml-auto'
-					href='./pdf/CV_JulianYachelini.pdf'
+					href={pdf}
 					download='CVJuliánYachelini'
 				>
 					<strong className='text-4xl'>download resume</strong>
