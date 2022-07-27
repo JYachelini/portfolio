@@ -391,12 +391,20 @@ main .section_skills .section_skills--right .section_skills--right_certification
 }
 main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap p,
 main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap h4,
-main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap a, main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap div a {
+main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap a,
+main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap div a {
   color: var(--color-gray);
 }
 main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap p,
-main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap a, main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap div a {
+main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap a,
+main .section_skills .section_skills--right .section_skills--right_certifications .certification-wrap div a {
   font-size: 0.7rem;
+}
+main .section_skills .section_skills--right .section_skills--right_certifications .coming-soon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 main .section_projects div article {
   justify-content: space-between;

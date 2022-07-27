@@ -25,20 +25,29 @@ const Skills = React.forwardRef((props, ref: any) => {
 					<h2>technologies</h2>
 					<div className='flex  max-w-full flex-wrap sm:gap-4 sm:p-4 pl-0'>
 						{technologies.map((image: ImagesInterface, index: number) => {
-							return <Images key={index} src={image.src} description={image.description} />
+							return (
+								<Images key={index} src={image.src} description={image.description} />
+							)
 						})}
 					</div>
 				</div>
 			</div>
 			<div className='section_skills--right'>
 				<div className='section_skills--right_certifications flex-wrap flex-col md:flex-row'>
-					<div className='md:w-[45%]'>
-						<a href='' className='certification-wrap md:w-full' target='_blank'>
+					<div className='md:w-[45%] relative'>
+						<a
+							href=''
+							className='certification-wrap md:w-full blur-[2px]'
+							target='_blank'
+						>
 							<h3>backend developer</h3>
 							<h4>coderhouse</h4>
 							<p>2022</p>
 							<p>click me to view certificate</p>
 						</a>
+						<p className='absolute top-0 flex justify-center items-center coming-soon'>
+							Coming soon.
+						</p>
 					</div>
 
 					<a
