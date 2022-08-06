@@ -20,7 +20,9 @@ function LeftSidebar(props: any) {
 						<img src={MeLogo} alt='' />
 					</Link>
 					<div>
-						<p>About</p>
+						<Link to='Me' smooth={true} duration={500}>
+							<p>About</p>
+						</Link>
 					</div>
 				</span>
 				<span className={`left_sidebar--menu_skills logos-menu ${props.inViewportSkills ? 'blurOff' : ''}`}>
@@ -28,7 +30,9 @@ function LeftSidebar(props: any) {
 						<img src={SkillsLogo} alt='' />
 					</Link>
 					<div>
-						<p>Skills</p>
+						<Link to='Skills' smooth={true} duration={500}>
+							<p>Skills</p>
+						</Link>
 					</div>
 				</span>
 				<span className={`left_sidebar--menu_works logos-menu ${props.inViewportProjects ? 'blurOff' : ''}`}>
@@ -36,7 +40,9 @@ function LeftSidebar(props: any) {
 						<img src={ProjectsLogo} alt='' />
 					</Link>
 					<div>
-						<p>Projects</p>
+						<Link to='Projects' smooth={true} duration={500}>
+							<p>Projects</p>
+						</Link>
 					</div>
 				</span>
 			</div>
