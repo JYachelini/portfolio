@@ -18,53 +18,48 @@ function LeftSidebar(props: any) {
 				<span className={`left_sidebar--menu_me logos-menu ${props.inViewportMe ? 'blurOff' : ''}`}>
 					<Link to='Me' smooth={true} duration={500}>
 						<img src={MeLogo} alt='' />
-					</Link>
-					<div>
-						<Link to='Me' smooth={true} duration={500}>
+						<div className='transition-colors hover:bg-[#0003]'>
 							<p>About</p>
-						</Link>
-						<p>about</p>
-					</div>
+						</div>
+					</Link>
 				</span>
 				<span className={`left_sidebar--menu_skills logos-menu ${props.inViewportSkills ? 'blurOff' : ''}`}>
 					<Link to='Skills' smooth={true} duration={500}>
 						<img src={SkillsLogo} alt='' />
 					</Link>
-					<div>
+					<div className='transition-colors hover:bg-[#0003]'>
 						<Link to='Skills' smooth={true} duration={500}>
 							<p>Skills</p>
 						</Link>
-						<p>skills</p>
 					</div>
 				</span>
 				<span className={`left_sidebar--menu_works logos-menu ${props.inViewportProjects ? 'blurOff' : ''}`}>
 					<Link to='Projects' smooth={true} duration={500}>
 						<img src={ProjectsLogo} alt='' />
 					</Link>
-					<div>
+					<div className='transition-colors hover:bg-[#0003]'>
 						<Link to='Projects' smooth={true} duration={500}>
 							<p>Projects</p>
 						</Link>
-						<p>projects</p>
 					</div>
 				</span>
 			</div>
 			<div className='left_sidebar--socialIcons'>
 				<a target='_blank' href='https://github.com/JYachelini/' className='left_sidebar--socialIcons_Github'>
 					<img src={GithubLogo} alt='' />
-					<div>
+					<div className='transition-colors hover:bg-[#0003]'>
 						<p>github</p>
 					</div>
 				</a>
 				<a target='_blank' href='https://www.linkedin.com/in/jyachelini/' className='left_sidebar--socialIcons_Linkedin'>
 					<img src={LinkedInLogo} alt='' />
-					<div>
+					<div className='transition-colors hover:bg-[#0003]'>
 						<p>linkedIn</p>
 					</div>
 				</a>
 				<a target='_blank' href='https://www.instagram.com/yache._/' className='left_sidebar--socialIcons_Instagram'>
 					<img src={InstagramLogo} alt='' />
-					<div>
+					<div className='transition-colors hover:bg-[#0003]'>
 						<p>instagram</p>
 					</div>
 				</a>

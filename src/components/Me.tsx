@@ -18,19 +18,14 @@ const Me = React.forwardRef((props, ref: any) => {
 				<h1>about me.</h1>
 				<p>I'm a backend Developer, from Argentina.</p>
 				<p>
-					I did one year of degree in systems analyst where I learned C. In
-					the second year I realised that what I really liked was programming language and I went
-					into web development, where I learned front-end and back-end.
+					I did one year of degree in systems analyst where I learned C programming language. In the second year I realised that what I really liked was to work with programming languages and I went into web development, where I learned front-end development and
+					back-end development.
 				</p>
 				<p>I am currently actively looking for a back-end developer job opportunity</p>
 				<p>
 					I like <strong>cats</strong>.
 				</p>
-				<a
-					className='xl:ml-auto'
-					href={pdf}
-					download='CVJuliánYachelini'
-				>
+				<a className='xl:ml-auto' href={pdf} download='CVJuliánYachelini'>
 					<strong className='text-4xl'>download resume</strong>
 				</a>
 			</div>

@@ -91,8 +91,27 @@
 		.left_sidebar--menu,
 		.left_sidebar--socialIcons {
 			div {
-				right: -110px;
+				padding-right: 4.2rem;
+				padding-left: 10rem;
+				left: -50px;
+				right: -125px;
 				opacity: 1;
+			}
+		}
+		@media only screen and (max-width: $breakpoint-lg) {
+			.left_sidebar--hover {
+				min-width: 0;
+			}
+			.left_sidebar--logoJY,
+			.left_sidebar--menu,
+			.left_sidebar--socialIcons {
+				div {
+					padding-right: 0;
+					padding-left: 0;
+					left: 0;
+					right: 0;
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -140,6 +159,7 @@
 			margin-bottom: 1rem;
 			position: relative;
 			opacity: 0;
+			background-color: var(--color-background);
 			&.active {
 				animation: slide-up 0.15s cubic-bezier(0.51, 0.92, 0.265, 1.55) both;
 			}
@@ -170,6 +190,42 @@
 			background-color: transparent;
 			display: flex;
 			margin: auto;
+		}
+
+		.arrow {
+			animation: bounce 0.5s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			animation-play-state: paused;
+			.down-arrow-head {
+				width: 0;
+				height: 0;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid #fff;
+			}
+			.arrow-body {
+				height: 10px;
+				width: 2px;
+				background-color: #fff;
+			}
+			@keyframes bounce {
+				from {
+					transform: translate3d(0, 25px, 0);
+				}
+				to {
+					transform: translate3d(0, 20px, 0);
+				}
+			}
+		}
+		.running {
+			animation-play-state: running;
+		}
+		.paused {
+			animation-play-state: paused;
 		}
 	}
 }
