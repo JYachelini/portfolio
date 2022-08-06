@@ -9,9 +9,8 @@ main {
 		margin-left: 1.5em;
 		margin-right: 1.5em;
 		padding: 0;
-		@media only screen and(min-width:$breakpoint-sm){
+		@media only screen and(min-width:$breakpoint-sm) {
 			padding: 3rem;
-
 		}
 		@media only screen and(min-width:$breakpoint-lg) {
 			margin-left: 0;
@@ -27,10 +26,10 @@ main {
 	.section_me--aboutMe {
 		width: 100%;
 		@media only screen and (min-width: $breakpoint-4xl) {
-			width: 40%;
+			width: 50%;
 		}
 		h1 {
-			@media only screen and (min-width:$breakpoint-sm){
+			@media only screen and (min-width: $breakpoint-sm) {
 				font-size: 2.5rem;
 			}
 			font-size: 1.7rem;
@@ -41,7 +40,7 @@ main {
 		text-align: right;
 		margin-top: 5em;
 		h3 {
-			@media only screen and (min-width:$breakpoint-sm){
+			@media only screen and (min-width: $breakpoint-sm) {
 				font-size: 1.5rem;
 			}
 			font-size: 1rem;
@@ -91,20 +90,16 @@ main {
 				max-width: 400px;
 			}
 			#soft {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem 4rem;
+				padding: 0.2rem;
+				div {
+					gap: 0.1rem;
+					width: 8rem;
 					display: flex;
-					flex-wrap: wrap;
-					gap: 1rem 4rem;
-					padding: 0.2rem;
-					div {
-						gap: 0.1rem;
-						width: 8rem;
-						display: flex;
-						flex-direction: column;
-						p {
-							text-align: center;
-							font-size: 1em;
-						}
-					}
+					flex-direction: column;
+				}
 			}
 		}
 		.section_skills--right {
@@ -121,13 +116,21 @@ main {
 					gap: 5px;
 					p,
 					h4,
-					a, div a {
+					a,
+					div a {
 						color: var(--color-gray);
 					}
 					p,
-					a, div a {
+					a,
+					div a {
 						font-size: 0.7rem;
 					}
+				}
+				.coming-soon {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
 				}
 			}
 		}

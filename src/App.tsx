@@ -8,16 +8,16 @@ import BgCircles from './components/BgCircles'
 import React from 'react'
 import useIntersection from './Functions/useIntersection'
 
-console.log('v: 0.1.1')
-console.log('Thanks you for watch my portfolio 🥳')
+console.log('v: 0.1.2')
+console.log('thanks you for watch my portfolio 🥳')
 
 function App() {
 	const refMe = React.createRef()
 	const refSkills = React.createRef()
 	const refProjects = React.createRef()
 
-	const inViewportMe = useIntersection(refMe, '-200px')
-	const inViewportSkills = useIntersection(refSkills, '-200px')
+	const inViewportMe = useIntersection(refMe, '-50px')
+	const inViewportSkills = useIntersection(refSkills, '-150px')
 	const inViewportProjects = useIntersection(refProjects, '-200px')
 
 	return (
