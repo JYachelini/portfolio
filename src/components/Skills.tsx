@@ -10,7 +10,6 @@ import { useIntersection } from '../Functions/customHooks'
 const Skills = React.forwardRef((props, ref: any) => {
 	const divRef = React.createRef<any>()
 	const dataRef = useIntersection(divRef, '-200px')
-	console.log(dataRef)
 	const rigthDiv = useSpring({
 		config: { duration: 500 },
 		to: { opacity: dataRef ? 1 : 0, left: dataRef ? '0px' : '-200px' },
