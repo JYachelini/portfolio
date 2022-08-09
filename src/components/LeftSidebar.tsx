@@ -1,4 +1,3 @@
-import react, { useRef } from 'react'
 import GithubLogo from '../assets/social/Github.svg'
 import InstagramLogo from '../assets/social/Instagram.svg'
 import LinkedInLogo from '../assets/social/Linkedin.svg'

@@ -3,10 +3,21 @@ import reactFarmaciaGif from '../assets/projects/boceto_gif.gif'
 import javascriptProject from '../assets/projects/javascript_project.png'
 import firstProject from '../assets/projects/first_project.png'
 
+import { animated, useSpring } from 'react-spring'
+import { useIntersection } from '../Functions/customHooks'
+
 const Projects = React.forwardRef((props, ref: any) => {
+	const divRef = React.createRef<any>()
+
+	const dataRef = useIntersection(divRef, '-100px')
+	const section = useSpring({
+		config: { duration: 700 },
+		to: { opacity: dataRef ? 1 : 0 },
+	})
+
 	return (
 		<>
-			<section ref={ref} id='Projects' className='section_projects'>
+			<animated.section style={section} ref={ref} id='Projects' className='section_projects'>
 				<h1 className='text-5xl sm:text-7xl font-semibold'>my projects</h1>
 				<div className='flex 2xl:justify-between flex-wrap flex-col 2xl:flex-row'>
 					<article className='p-4 pl-0 flex flex-col gap-4 max-w-xl'>
@@ -19,6 +30,7 @@ const Projects = React.forwardRef((props, ref: any) => {
 							<p className='text-center text-sm pt-3'>click me to view the project online!</p>
 						</a>
 					</article>
+					<div ref={divRef}></div>
 					<article className='p-4 pl-0 flex flex-col gap-4 max-w-2xl'>
 						<h2 className='text-3xl underline'>javascript project</h2>
 						<p>This project is based on my family's pharmacy.</p>
@@ -39,7 +51,7 @@ const Projects = React.forwardRef((props, ref: any) => {
 						</a>
 					</article>
 				</div>
-			</section>
+			</animated.section>
 		</>
 	)
 })

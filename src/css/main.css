@@ -451,6 +451,44 @@ main .section_me {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -webkit-animation: fade-in 1s;
+          animation: fade-in 1s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-filter: brightness(1) blur(20px);
+            filter: brightness(1) blur(20px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-filter: brightness(2) blur(10px);
+            filter: brightness(2) blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: brightness(1) blur(0);
+            filter: brightness(1) blur(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-filter: brightness(1) blur(20px);
+            filter: brightness(1) blur(20px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-filter: brightness(2) blur(10px);
+            filter: brightness(2) blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: brightness(1) blur(0);
+            filter: brightness(1) blur(0);
+  }
 }
 
 main .section_me--presentation,

@@ -6,9 +6,9 @@ import Projects from './components/Projects'
 import RightSidebar from './components/RightSidebar'
 import BgCircles from './components/BgCircles'
 import React from 'react'
-import useIntersection from './Functions/useIntersection'
+import {useIntersection} from './Functions/customHooks'
 
-console.log('v: 0.1.2')
+console.log('v: 0.1.4')
 console.log('thanks you for watch my portfolio 🥳')
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 				inViewportSkills={inViewportSkills}
 				inViewportProjects={inViewportProjects}
 			/>
-			<main>
+			<main className='overflow-hidden overflow-y-auto'>
 				<Me ref={refMe} />
 				<Skills ref={refSkills} />
 				<Projects ref={refProjects} />
