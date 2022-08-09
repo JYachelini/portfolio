@@ -17,8 +17,8 @@ const Projects = React.forwardRef((props, ref: any) => {
 
 	return (
 		<>
-			<animated.section style={section} ref={ref} id='Projects' className='section_projects'>
-				<h1 className='text-5xl sm:text-7xl font-semibold'>my projects</h1>
+			<animated.section style={section} ref={ref} id='Projects' className='section_projects relative overflow-y-hidden'>
+				<h1 className='md:text-5xl text-4xl sm:text-7xl font-semibold'>my projects</h1>
 				<div className='flex 2xl:justify-between flex-wrap flex-col 2xl:flex-row'>
 					<article className='p-4 pl-0 flex flex-col gap-4 max-w-xl'>
 						<h2 className='text-3xl underline'>react project</h2>
@@ -30,7 +30,7 @@ const Projects = React.forwardRef((props, ref: any) => {
 							<p className='text-center text-sm pt-3'>click me to view the project online!</p>
 						</a>
 					</article>
-					<div ref={divRef}></div>
+					<div ref={divRef} className='absolute w-full h-full'></div>
 					<article className='p-4 pl-0 flex flex-col gap-4 max-w-2xl'>
 						<h2 className='text-3xl underline'>javascript project</h2>
 						<p>This project is based on my family's pharmacy.</p>

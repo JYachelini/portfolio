@@ -9,8 +9,8 @@ import { useIntersection } from '../Functions/customHooks'
 
 const Skills = React.forwardRef((props, ref: any) => {
 	const divRef = React.createRef<any>()
-
 	const dataRef = useIntersection(divRef, '-200px')
+	console.log(dataRef)
 	const rigthDiv = useSpring({
 		config: { duration: 500 },
 		to: { opacity: dataRef ? 1 : 0, left: dataRef ? '0px' : '-200px' },
@@ -27,23 +27,23 @@ const Skills = React.forwardRef((props, ref: any) => {
 		<section id='Skills' className='section_skills relative'>
 			<animated.div style={rigthDiv} className='section_skills--left flex flex-col justify-between relative'>
 				<div ref={ref}>
-					<h2 className='text-3xl'>soft skills</h2>
-					<div id='soft'>
+					<h2 className='text-3xl text-center md:text-left'>soft skills</h2>
+					<div id='soft' className='md:justify-start justify-center'>
 						{softSkills.map((image: ImagesInterface, index: number) => {
 							return <Images key={index} src={image.src} description={image.description} />
 						})}
 					</div>
 				</div>
 				<div className='section_skills--right-skill'>
-					<h2>technologies</h2>
-					<div className='flex  max-w-full flex-wrap sm:gap-4 sm:p-4 pl-0'>
+					<h2 className='text-center md:text-left'>technologies</h2>
+					<div className='flex  max-w-full flex-wrap sm:gap-4 sm:p-4 pl-0 md:justify-start justify-center'>
 						{technologies.map((image: ImagesInterface, index: number) => {
 							return <Images key={index} src={image.src} description={image.description} />
 						})}
 					</div>
 				</div>
 			</animated.div>
-			<div ref={divRef} className='absolute top-0 bottom-0 h-[100vw]'></div>
+			<div ref={divRef} className='absolute top-0 bottom-0 h-full w-full md:h-[2000px]'></div>
 			<animated.div style={leftDiv} className='section_skills--right relative'>
 				<div className='section_skills--right_certifications flex-wrap flex-col md:flex-row'>
 					<div className='md:w-[45%] relative'>
