@@ -30,7 +30,7 @@ const Projects = React.forwardRef((props, ref: any) => {
 							<p className='text-center text-sm pt-3'>click me to view the project online!</p>
 						</a>
 					</article>
-					<div ref={divRef} className='absolute w-full h-full'></div>
+					<div ref={divRef} className='absolute md:w-full h-full'></div>
 					<article className='p-4 pl-0 flex flex-col gap-4 max-w-2xl'>
 						<h2 className='text-3xl underline'>javascript project</h2>
 						<p>This project is based on my family's pharmacy.</p>
