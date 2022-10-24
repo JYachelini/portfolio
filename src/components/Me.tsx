@@ -1,5 +1,5 @@
 import React from 'react'
-import pdf from '../assets/CV_JulianYachelini_EN.pdf'
+import pdf from '../assets/CV_Julián_Yachelini_EN.pdf'
 
 const Me = React.forwardRef((props, ref: any) => {
 	return (
