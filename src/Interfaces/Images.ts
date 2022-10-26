@@ -1,4 +1,5 @@
 export interface ImagesInterface {
-	src:string
-	description:string
+	src: string
+	description: string
+	href?: string
 }

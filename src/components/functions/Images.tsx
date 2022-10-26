@@ -1,14 +1,19 @@
-import React from 'react'
+import { motion } from 'framer-motion'
 import { ImagesInterface } from '../../Interfaces/Images'
 
-
-
-function Images({ src, description }:ImagesInterface, key:number) {
+function Images({ src, description, href }: ImagesInterface, key: number) {
 	return (
-		<div key={key} className='flex justify-between flex-col'>
-			<img src={src} alt={description} />
+		<motion.a
+			whileHover={{ scale: 1.05 }}
+			href={href}
+			key={key}
+			className='flex justify-between flex-col z-10'
+		>
+			<div className='flex h-full'>
+				<img src={src} className='m-auto' alt={description} />
+			</div>
 			<p className='text-center text-sm '>{description}</p>
-		</div>
+		</motion.a>
 	)
 }
 
