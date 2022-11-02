@@ -518,6 +518,9 @@ main .section_projects div article .express {
 main .section_projects div article .postgresql {
   background-color: #06b6d4;
 }
+main .section_projects div article .materialUI {
+  background-color: #3b82f6;
+}
 main .section_projects div article .mongodb {
   background-color: #14b8a6;
 }

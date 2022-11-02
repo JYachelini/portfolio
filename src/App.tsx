@@ -30,7 +30,7 @@ function App() {
 			<main className='overflow-hidden'>
 				<Me ref={refMe} />
 				<Skills ref={refSkills} />
-				<Projects ref={refProjects} />
+				<Projects />
 			</main>
 			<RightSidebar />
 			<BgCircles />
