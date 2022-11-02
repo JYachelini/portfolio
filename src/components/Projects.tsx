@@ -73,7 +73,7 @@ const Projects = React.forwardRef((props) => {
 				className='section_projects opacity-0 relative overflow-hidden flex flex-col gap-5'
 			>
 				<h1 className='md:text-5xl text-4xl sm:text-7xl font-semibold'>my projects</h1>
-				<div className='flex 2xl:justify-evenly flex-wrap flex-col-reverse 2xl:flex-row-reverse gap-5'>
+				<div className='flex 2xl:justify-evenly flex-wrap-reverse flex-col-reverse 2xl:flex-row-reverse gap-5'>
 					{projects.map((project) => {
 						return <Project project={project} key={project.id} />
 					})}
